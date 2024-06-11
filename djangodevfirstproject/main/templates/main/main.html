@@ -1,0 +1,28 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block links %}
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+{% endblock %}
+{% block content %}
+    <div id="main-image-block" ><img class="paragraph-images" id="main-image" src="{% static 'main/img/main.png' %}" alt="main image"></div>
+
+    <div id="div1">
+        <img  id="img1" src="{% static 'main/img/sema.jpg' %}" alt="sema">
+        <h2>Сема</h2>
+    </div>
+
+    <div id="div2" >
+        <img id="img2" src="{% static 'main/img/danil.jpg' %}" alt="danil">
+        <h2>Данило</h2>
+    </div>
+    
+    <div id="div3">
+        <img id="img3" src="{% static 'main/img/ludmila.jpg' %}" alt="ludmila">
+        <h2>Людмила</h2>
+    </div>
+
+    <div id="div4">
+        <img id="img4" src="{% static 'main/img/feliks.jpg' %}" alt="feliks">
+        <h2>Фелікс</h2>
+    </div>
+{% endblock %}
